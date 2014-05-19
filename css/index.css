@@ -1,0 +1,13 @@
+#login{
+	background: #2980b9;
+}
+#login input[type=submit]{
+	background-color: #14FF00;
+}
+#registro{
+	background: #2980b9;
+}
+#logoImg img{
+	height:100%;
+	width: 100%;
+}
