@@ -1,0 +1,46 @@
+#MenuPanel{
+	background-color: #2980b9;
+}
+#MenuPanel img{
+	height: 60%;
+	width: 60%;
+}
+#MenuPanel ul {
+	padding-top: 5%;
+	margin: 0 -1em -1em -1em;
+	background-color: #2980b9;
+}
+
+#MenuPanel ul li a{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #71A7CA;
+	color:white;
+	text-shadow: 0 1px 0 #333;
+} 
+#MenuPanel ul li a:hover{
+	background-color: #505574;
+} 
+#abrePanel{
+	position: absolute;
+	background-image: url(../img/menu_btn.png);
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 20px;
+	box-shadow: none;
+	background-color: transparent !important;
+	border: none;	
+	top: 0;
+	margin-top: 6px !important;
+}
+.panel-btn{
+	position: absolute;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 20px;
+	box-shadow: none;
+	background-color: transparent !important;
+	border: none;	
+	top: 0;
+	margin-top: 10px !important;
+}
