@@ -16,7 +16,7 @@
         <title>Santa MartApp</title>
     </head>
     <body>
-        <div data-role="page">            
+        <div data-role="page" id="inicio">            
             <!-- MENU DESPLEGABLE -->
             <div data-role="panel" id="MenuPanel" data-position-fixed="true" data-position="left" data-display="reveal"> 
                     <div align="center">
@@ -25,26 +25,43 @@
                     <ul data-role="listview"> 
                       <li data-icon="home ui-btn-icon-left"><a href="#">Inicio</a></li> 
                       <li data-icon="location ui-btn-icon-left"><a href="#">Lugares</a></li> 
-                      <li data-icon="plus ui-btn-icon-left"><a href="#">Crear Paseo</a></li> 
+                      <li data-icon="calendar ui-btn-icon-left"><a href="#">Paseos</a></li> 
                       <li data-icon="heart ui-btn-icon-left"><a href="#">Mis Amigos</a></li> 
-                      <li data-icon="user ui-btn-icon-left"><a href="#">Mi cuenta</a></li> 
+                      <li data-icon="user ui-btn-icon-left"><a href="#MiCuenta">Mi cuenta</a></li> 
                       <li data-icon="power ui-btn-icon-left"><a href="#">Cerrar Sesión</a></li> 
                     </ul>                                               
             </div> 
 
             <!-- VISTA PRINCIPAL -->
-            <div data-role="header" data-position="fixed">
+            <div data-role="header" data-position="fixed" class="sm-tema">
+                <h1>Santa Martapp</h1>
+                <a href="#MenuPanel" id="abrePanel" class="panel-btn"></a>
+            </div>                          
+
+            <div data-role="main" id="inicio" class="ui-content">
+
+                <div align="center"><img class="img-ajustada" src="img/Rodacho.jpg"></div>
+                <div class="sm-texto-centro">
+                    <h1>Lugares populares</h1>
+                    <p>Sin importar la época del año siempre hay lugares fijos para visitar, Santa Marta es mágica.</p>
+                    <a href="#lugares" class="sm-botones ui-btn ui-btn-inline ui-icon-star ui-btn-icon-bottom">Ver Lugares</a>
+                </div>
+            </div>
+            
+            <div data-role="footer" class="sm-tema" id=footer >
+                <h1>The3BallSoft</h1>
+            </div> 
+        </div>
+        <!-- MI CUENTA -->
+        <div data-role="page" id="MiCuenta" data-transition="slide">
+            <div data-role="header" data-position="fixed" class="sm-tema">
                 <h1>Santa Martapp</h1>
                 <a href="#MenuPanel" id="abrePanel" class="panel-btn"></a>
             </div>
-            <div data-role="main" id="inicio" class="ui-content">
-                <h1>Santa Martapp</h1>
-                <p>Prueba desde jquery mobile</p>
+            <div id="contenidoMiCuenta" class="ui-content">
+                <h1>esta maraña es pa la cuenta</h1>
+                <p>Podras cambiar tu contraseña, tu correo, cambiar tu foto de perfil y otras pendejadas mas</p>
             </div>
-            
-            <div data-role="footer" id=footer data-position="fixed">
-                <h1>The3BallSoft</h1>
-            </div> 
         </div>
         <!-- <script type="text/javascript" src="js/index.js"></script> -->       
         <script type="text/javascript" src="js/jquery.min.js"></script>

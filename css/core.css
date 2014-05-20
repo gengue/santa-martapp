@@ -1,6 +1,11 @@
 #MenuPanel{
 	background-color: #2980b9;
 }
+.sm-tema{
+	background-color: #2980b9 !important;
+	color: white  !important;
+	text-shadow: 0 1px 0 #333  !important;
+}
 #MenuPanel img{
 	height: 60%;
 	width: 60%;
@@ -19,7 +24,7 @@
 	text-shadow: 0 1px 0 #333;
 } 
 #MenuPanel ul li a:hover{
-	background-color: #505574;
+	background-color: #18496E;
 } 
 #abrePanel{
 	position: absolute;
@@ -43,4 +48,21 @@
 	border: none;	
 	top: 0;
 	margin-top: 10px !important;
+}
+#inicio {
+	padding-top: 0;
+	margin-top: 0; 
+}
+.img-ajustada{
+	height: auto;	
+	width: 100%;
+}
+.sm-botones {
+	background-color: #A0C7E0 !important;
+	border-radius: 5px;
+}
+.sm-botones:hover{
+	background-color: #2980b9 !important;
+	color: white !important;
+	text-shadow: 0 1px 0 #333  !important;
 }

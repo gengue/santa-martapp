@@ -1,8 +1,27 @@
-#login{
-	/*background: #2980b9;*/
+body{
+	font-family: 'Open Sans', Helvetica, Arial !important;
 }
-
+#loginForm{
+	display: block;
+}
 #registro img{
 	opacity:0.2;
 	z-index: -99;
+}
+.sm-texto-centro{
+	text-align: center;
+}
+.sm-botones {
+	background-color: #A0C7E0 !important;
+	border-radius: 5px;
+}
+.sm-botones:hover{
+	background-color: #2980b9 !important;
+	color: white !important;
+	text-shadow: 0 1px 0 #333  !important;
+}
+.sm-tema{
+	background-color: #2980b9 !important;
+	color: white  !important;
+	text-shadow: 0 1px 0 #333  !important;
 }

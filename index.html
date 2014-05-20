@@ -6,6 +6,7 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1" /> 
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.min.css" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/core.css" />
         <script type='application/javascript' src='js/fastclick.js'></script>
         <script type="text/javascript">
             window.addEventListener('load', function() {
@@ -17,7 +18,7 @@
     <body>
     <!-- INICIAR SESION -->
         <div data-role="page" id="login">            
-            <div data-role="content" id="contenidoLogin">                
+            <div data-role="content" id="contenidoLogin" class="sm-tema">                
                 <form id="loginform"> 
                     <div align="center">
                         <img src="img/logo.png">
@@ -37,7 +38,7 @@
     <!-- REGISTRO-->
     <div data-role="page" id="registro">   
             <div data-role="header"><h1>Registro</h1></div>         
-            <div data-role="content" id="contenidoRegistro"> 
+            <div data-role="content" id="contenidoRegistro" class="sm-tema"> 
                 <form id="registroform"> 
                     <div>                        
                         <input type="text" name="user" id="user" placeholder="Nombre de usuario" > 
@@ -65,15 +66,19 @@
         <script type="text/javascript">
             $('#loginform').submit(function(ev){
                 ev.preventDefault();
-                $.mobile.changePage('core.html', {animation: "pop"});
+                $.mobile.changePage('core.html#inicio', {
+                    animation: "pop"
+                });
+                return false;
             });
 
             $('#registroform').submit(function(ev){
                 ev.preventDefault();
-                $.mobile.changePage( "index.html", {
+                $.mobile.changePage( "index.html#login", {
                     transition: "slide",
                     reverse: true
                 });
+                return false;
             });        
         </script>
     </body>
